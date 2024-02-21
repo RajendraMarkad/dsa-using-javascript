@@ -1,3 +1,5 @@
+// If you want to remove duplicates from an array without using built-in methods, you can achieve this by iterating over the array and checking if each element has already been encountered.
+
 const array = [1, 2, 3, 1, 2, 4, 5, 3];
 
 function removeDuplicates(arr) {
@@ -23,8 +25,8 @@ const resultArray = removeDuplicates(array);
 console.log(resultArray); // Output: [1, 2, 3, 4, 5]
 
 
-# Optimised Way
-
+// # Optimised Way
+// We can optimize the algorithm by using an object (or a Map) to keep track of encountered elements. This approach has a time complexity of O(n), where n is the number of elements in the array.
 const array = [1, 2, 3, 1, 2, 4, 5, 3];
 
 function removeDuplicates(arr) {
